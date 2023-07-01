@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+:root {
+    --primeira: black;
+    --segunda: #f6f6f6;
+    --terceira: #272727;
+    --quarta:#BA6EE6;
+    --quinta:#693C82;
+    --sexta: #DFAEE9;
+    --setima: #CE7AFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh ;
+    background-color: var(--primeira);
+    color: var(--segunda);
+}
+
+.cabecalho {
+   /* background-color: #CE7AFF;*/
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.cabecalho__link {
+    color: var(--quarta);
+    font-family: 'Pangolin', cursive;
+    font-size: 1.43rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.cabecalho__link:hover {
+    color: var(--sexta);
+    transition: 5ms;
+}
+
+.meutitulo {
+color: var(--setima);
+}
+
+.meunome {
+    color: var(--quarta) ;
+}
+
+.meunome:hover {
+    background-color: var(--terceira);
+}
+
+.conteiner {
+    margin: 5% 12%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.conteiner__conteudo {
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.conteiner__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: 'Pangolin', cursive;
+}
+
+.conteiner__conteudo__titulo__2 {
+    font-size: 2.25rem;
+    font-family: 'Pangolin', cursive;
+    color: var(--setima);
+}
+
+.conteiner__conteudo__txt {
+    font-size: 1.25rem;
+    font-family: 'Pangolin', cursive;
+    text-decoration: none;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.botoes__sub {
+    font-family:'Pangolin', cursive;
+    font-size: 1.5rem ;
+}
+
+.botoes_link {
+    display: flex;
+    justify-content:center ; 
+    gap: 16px;
+    color: var(--segunda);
+    border: 2px solid var(--quinta);
+    border-radius: 8px;
+    font-weight: 600;
+    width: 52%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-family: 'Pangolin', cursive;
+    padding: 20px 0px;
+    text-decoration: none;
+}
+
+.botoes_link:hover {
+    background-color: var(--terceira);
+    transition: 1s;
+}
+
+.imgmar {
+    width: 45%;
+}
+
+.rodape {
+    color: var(--terceira);
+    background-color: var(--quarta);
+    display: flex;
+    justify-content: center;
+    font-family: 'Pangolin', cursive;
+    font-size: 0.93rem;
+    padding: 15px;
+}
+
+.links__curri {
+    text-decoration: none;
+    color: var(--quinta);
+}
+
+.meunomelink {
+    text-decoration: none;
+    color: var(--terceira);
+}
+
+.meunomelink:hover {
+    background-color: var(--quinta);
+}
+
+@media (max-width:1200px) {
+   .cabecalho {
+    padding: 10%;
+   }
+   
+   .conteiner {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .conteiner__conteudo {
+        width: auto;
+    }
+}
